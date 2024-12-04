@@ -62,7 +62,7 @@ class _LedResistorCalculatorPageState
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: screenWidth > 600 ? 400 : double.infinity, // Wider on large screens
+                  width: screenWidth > 500 ? 400 : double.infinity, // Wider on large screens
                   child: DropdownButtonFormField<String>(
                     decoration: InputDecoration(labelText: 'Select LED Color'),
                     items: _ledForwardVoltages.keys
@@ -81,7 +81,7 @@ class _LedResistorCalculatorPageState
                 ),
                 SizedBox(height: 24), // Increased vertical padding
                 SizedBox(
-                  width: screenWidth > 600 ? 400 : double.infinity, // Wider on large screens
+                  width: screenWidth > 500 ? 400 : double.infinity, // Wider on large screens
                   child: TextField(
                     controller: _supplyVoltageController,
                     decoration: InputDecoration(
@@ -93,7 +93,7 @@ class _LedResistorCalculatorPageState
                 ),
                 SizedBox(height: 24), // Increased vertical padding
                 SizedBox(
-                  width: screenWidth > 600 ? 400 : double.infinity, // Wider on large screens
+                  width: screenWidth > 500 ? 400 : double.infinity, // Wider on large screens
                   child: ElevatedButton(
                     onPressed: _calculateResistor,
                     child: Text('Calculate Resistor'),

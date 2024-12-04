@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '/pages/led_resistor_calculator_page.dart'; 
+import '/pages/capacitor_tools_page.dart'; 
 
 void main() {
   runApp(MyApp());
@@ -28,9 +29,9 @@ class HomePage extends StatelessWidget {
         navigateTo: LedResistorCalculatorPage(),
       ),
       _Page(
-        title: "Another Feature",
+        title: "Capacitor tool",
         icon: Icons.lightbulb,
-        navigateTo: Placeholder(), // Replace with your next page
+        navigateTo: CapacitorToolsPage(), // Replace with your next page
       ),
     ];
 
