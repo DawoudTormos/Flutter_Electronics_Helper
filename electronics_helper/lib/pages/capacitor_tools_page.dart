@@ -67,6 +67,8 @@ class _CapacitorToolsPageState extends State<CapacitorToolsPage> {
                   width: containerWidth,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+
                     children: [
                       const Text(
                         'Capacitor Charge Time',
