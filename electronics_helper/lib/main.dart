@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '/pages/led_resistor_calculator_page.dart'; 
 import '/pages/capacitor_tools_page.dart'; 
+import '/pages/power_consumption_page.dart'; 
 
 void main() {
   runApp(MyApp());
@@ -25,8 +26,18 @@ class HomePage extends StatelessWidget {
     final List<_Page> pages = [
       _Page(
         title: "LED Resistor Calculator",
-        icon: Icons.electrical_services,
+        icon: Icons.light_mode_outlined,
         navigateTo: LedResistorCalculatorPage(),
+      ),
+      _Page(
+        title: "Capacitor tool",
+        icon: Icons.adjust_sharp,
+        navigateTo: CapacitorToolsPage(), // Replace with your next page
+      ),
+      _Page(
+        title: "Power Consumption Calculator",
+        icon: Icons.electric_bolt,
+        navigateTo: PowerConsumptionPage(), // Replace with your next page
       ),
       _Page(
         title: "Capacitor tool",
